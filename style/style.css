@@ -1,0 +1,229 @@
+#moves{
+    font-size: larger;
+    overflow: scroll;
+    height: 200px;
+    overflow-x: hidden;
+    background: #31a7f1;
+    color: black;
+}
+
+.container{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#izquierda{
+    box-sizing: border-box;
+    width: 50%;
+    height: 700px;
+    float: left;
+    background-color: #ce1131;
+    border: 2px solid black;
+}
+
+#derecha{
+    box-sizing: border-box;
+    width: 50%;
+    height: 700px;
+    float: right;
+    background-color: #ce1131;
+    border: 2px solid black;
+}
+
+.pantalla{
+    background-color: #bd0f34;
+    padding: 5%;
+    margin: 5%;
+    height: 70%;
+    text-align: center;
+}
+
+.botones-superiores{
+    height: 100px;
+    width: 100%;
+    background-color: #ce1131;
+    display: flex;
+}
+
+.circulo-azul{
+    width: 80px;
+    height: 80px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #009dd4;
+    border: 3px solid white;
+    margin: 3%;
+}
+
+.circulo-rojo{
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ef0707;
+    margin: 3%;
+}
+
+.circulo-amarillo{
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #e2e615;
+    margin: 3%;
+}
+
+.show-pokemon{
+    height: 60%;
+    background: gray;
+    padding: 5%;
+}
+
+.info-pokemon{
+    height: 100%;
+    background-color: white;
+}
+
+.info-pokemon h1{
+    font-size: 3vh;
+}
+
+button.circulo-negro{
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: black;
+    margin: 3%;
+    color: white;
+    font-size: 1vh;
+}
+
+button.flecha-arriba{
+    width: 0; 
+    height: 0; 
+    border: none;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 40px solid black;
+    padding: 0;
+    background: none;
+}
+
+button.flecha-abajo{
+    width: 0; 
+    height: 0; 
+    border: none;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-top: 40px solid black;
+    padding: 0;
+    background: none;
+}
+
+.controls table{
+    width: 100%;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.controls input:is(#pokemon,#pokemonNumber){
+    background-color: #55ab62;
+    height: 40px;
+    text-align: center;
+}
+
+.controls input:is(#pokemon,#pokemonNumber)::placeholder{
+    color: black;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#types{
+    font-size: 2vh;
+    display: flex;
+}
+
+#types p{
+    font-size: 2vh;
+    margin-left: 10%;
+}
+
+.info-types{
+    display: flex;
+}
+
+.info-types p{
+    font-size: 2vh;
+}
+
+.black-layout{
+    background: black;
+    margin: 5%;
+    box-sizing: border-box;
+    max-height: 350px;
+    color: #d2bb0c;
+    padding: 2%;
+}
+
+#myChart{
+    max-height: 200px;
+}
+
+.info-moves{
+    color: #d2bb0c;
+    margin: 5%;
+    box-sizing: border-box;
+}
+
+.info-moves p{
+    font-size: 3vh;
+    padding: 2%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.info-moves #moves p{
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+.info-height{
+    padding: 5%;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+.info-height div{
+    width: 35%;
+    background: black;
+    color: #d2bb0c;
+}
+
+.info-height p{
+    font-size: 3vh;
+    padding: 5%;
+    margin: 0;
+}
+
+.info-height .right{
+    float: right;
+}
+
+@media screen and (max-width: 800px) {
+    #izquierda{
+        width: 100%;
+    }
+
+    #derecha{
+        width: 100%;
+    }
+}

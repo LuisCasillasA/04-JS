@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../library/node_modules/chart.js/dist/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="izquierda">
+            <div class="botones-superiores">
+                <div class="circulo-azul"></div>
+                <div class="circulo-rojo"></div>
+                <div class="circulo-amarillo"></div>
+                <div class="circulo-amarillo"></div>
+            </div>
+            <div class="pantalla">
+                <div class="show-pokemon">
+                    <div class="info-pokemon">
+                        <img src="pokebola.png" alt="Pokemon" id="pokemonImage" height="70%"><br>
+                        <h1 id="pokemonName"></h1>
+                    </div>
+                </div>
+                <div class="controls">
+                    <table>
+                        <tr>
+                            <td><button onclick="fetchPokemon()" class="circulo-negro">OK</button></td>
+                            <td><input type="text" placeholder="Pokemon Name" id="pokemon" name="pokemon"></td>
+                            <td><button onclick="fetchUpDownPokemon('+')" class="flecha-arriba"></button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="fetchPokemonNumber()" class="circulo-negro">OK</button></td>
+                            <td><input type="number" placeholder="Pokemon number" id="pokemonNumber" name="pokemonNumber" maxlength="3"></td>
+                            <td><button onclick="fetchUpDownPokemon('-')" class="flecha-abajo"></button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="derecha">
+            <div class="black-layout">
+                <div class="info-types">
+                    <p>TYPE: </p>
+                    <div id="types">
+
+                    </div>
+                </div>
+                <div id="stats">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+            <div class="info-moves">
+                <p>Moves</p>
+                <div id="moves">
+        
+                </div>
+
+            </div>
+
+            <div class="info-height">
+                <div style="float: left;">
+                    <p id="weight">Weight: </p>
+                </div>
+                <div style="float: right;">
+                    <p id="height">Height: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="../js/pokedex.js"></script>
+</footer>
+</html>
